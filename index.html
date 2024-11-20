@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url("");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        background-color: #f4f4f9;
+    }
+    .btn-div{
+        display: grid;
+        grid-template-columns:repeat(4,0fr);
+        gap: 10px;
+    }
+    .btn{
+        width: 4rem;
+        height: 4rem;
+        border: radius 10px;;
+        cursor: pointer;
+        background-color: #c2c2c2;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:900;
+        font-size: 20px;
+    }
+    .pbtn{
+        grid-row: span 2;
+        width: 4rem;
+        height: 9rem;
+        border-radius: 10px;
+        background-color: #c2c2c2;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:600;
+        font-size: 20px ;
+    }
+    .cbtn{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 7px;
+        border: none;
+        cursor: pointer;
+        color:RGB(238, 238, 238);
+        background-color: #4053dd;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:600;
+        font-size: 24px;
+    }
+    .container{
+        max-width: 300px;
+        padding: 25px;
+        margin: auto;
+        margin-top: 2rem;
+        background: #4a4949;
+        border-radius: 10px;
+        box-shadow: 4px 8px rgba(0,0,0,0.1);
+    }
+    .btn-div{
+        margin: 10px;
+    }
+    .display{
+        width: 75%;
+        padding: 30px;
+        border-radius: 10px;
+        border: 10px solid #cdcdcd;
+        background-color: #bbc299;
+    }
+    .title{
+        text-align: center;
+        margin-top: 7px;
+        font-size: 36px ;
+        font-family:cursive;
+    }
+
+</style>
+<body>
+
+    <h2 class="title">CALCULATOR</h2>
+    <div class="container">
+        <div class="display"></div>
+        <div class="btn-div">
+            <button class="cbtn">AC</button>
+            <button class="cbtn">CE</button>
+            <button class="btn">%</button>
+            <button class="btn">÷</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">×</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">-</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="pbtn">+</button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn">=</button>
+        </div>
+    </div>
+</body>
+</html>
